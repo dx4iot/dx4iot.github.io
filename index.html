@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>dx4iot — Nishant Tiwari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+<canvas id="matrix-canvas"></canvas>
+<canvas id="canvas-bg"></canvas>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">dx<span>4</span>iot</div>
+  <ul class="nav-links">
+    <li><a href="#about">whoami</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#income">streams</a></li>
+    <li><a href="#connect">connect</a></li>
+  </ul>
+  <div class="nav-status">
+    <div class="status-dot"></div>
+    BUG BOUNTY: ACTIVE
+  </div>
+  <div class="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-split">
+    <div class="hero-left">
+      <div class="hero-tag">dx4iot · India</div>
+      <h1 class="hero-name">NISHANT<br>TIWARI</h1>
+      <div class="hero-designation">
+        Security Researcher
+        <span class="sep">/</span>
+        Bug Bounty Hunter
+        <span class="sep">/</span>
+        Educator
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-badges">
+        <span class="badge active">Bug Bounty: Active</span>
+        <span class="badge amber">1L+ Students</span>
+        <span class="badge cyan">Freelance: Open</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="hex-bg"></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-cmd">whoami</div>
+      <h2 class="section-title">ABOUT</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="stat-grid reveal">
+      <div class="stat-card">
+        <div class="stat-number">1L+</div>
+        <div class="stat-label">Udemy Students</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">3+</div>
+        <div class="stat-label">Platforms Active</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Income Streams</div>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="terminal-box reveal">
+        <div class="terminal-header">
+          <div class="terminal-dot td-red"></div>
+          <div class="terminal-dot td-amber"></div>
+          <div class="terminal-dot td-green"></div>
+          <span class="terminal-title">cat about.txt</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line">
+            <span class="t-key">Name</span>
+            <span class="t-sep">:</span>
+            <span class="t-val">Nishant Tiwari</span>
+          </div>
+          <div class="t-line">
+            <span class="t-key">Handle</span>
+            <span class="t-sep">:</span>
+            <span class="t-val amber">dx4iot</span>
+          </div>
+          <div class="t-line">
+            <span class="t-key">Role</span>
+            <span class="t-sep">:</span>
+            <span class="t-val">Security Researcher | Bug Bounty Hunter</span>
+          </div>
+          <div class="t-line">
+            <span class="t-key">Location</span>
+            <span class="t-sep">:</span>
+            <span class="t-val cyan">India</span>
+          </div>
+          <div class="t-line">
+            <span class="t-key">Focus</span>
+            <span class="t-sep">:</span>
+            <span class="t-val">Web App Pentesting, Recon, OSINT</span>
+          </div>
+          <div class="t-line">
+            <span class="t-key">Status</span>
+            <span class="t-sep">:</span>
+            <span class="t-val" style="color:var(--green);animation:pulse 1.5s infinite">Always Hunting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-bio reveal" style="transition-delay:.2s">
+        <p><strong>Security researcher</strong> focused on bug bounty programs, web application pentesting, and ethical hacking. I believe in breaking things <em style="color:var(--amber)">legally</em> to make the internet safer.</p>
+        <p><strong>Udemy Instructor</strong> with <strong>1 Lakh+ students</strong> taught across Python, cybersecurity &amp; programming.</p>
+        <p><strong>Freelancer</strong> building tools, doing security audits, and shipping code for global clients.</p>
+        <p><strong>Multiple income streams</strong> — bug bounties, trading, courses, and freelance projects run in parallel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-cmd">nmap --skills</div>
+      <h2 class="section-title">SKILLS & TOOLS</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-3d-container reveal">
+      <canvas id="skills-canvas"></canvas>
+    </div>
+
+    <div class="skills-grid reveal">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">C</span>
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">HTML5</span>
+      <span class="skill-tag blue">Bash</span>
+      <span class="skill-tag blue">TensorFlow</span>
+      <span class="skill-tag blue">NumPy</span>
+      <span class="skill-tag blue">Pandas</span>
+      <span class="skill-tag blue">Git</span>
+      <span class="skill-tag blue">VS Code</span>
+      <span class="skill-tag purple">Linux</span>
+      <span class="skill-tag purple">Burp Suite</span>
+      <span class="skill-tag purple">Kali Linux</span>
+      <span class="skill-tag purple">Wireshark</span>
+      <span class="skill-tag purple">Metasploit</span>
+      <span class="skill-tag purple">OSINT</span>
+      <span class="skill-tag" style="border-color:rgba(255,43,78,.3);color:rgba(255,43,78,.7)">Bug Bounty</span>
+      <span class="skill-tag" style="border-color:rgba(255,43,78,.3);color:rgba(255,43,78,.7)">HackerOne</span>
+      <span class="skill-tag" style="border-color:rgba(255,43,78,.3);color:rgba(255,43,78,.7)">Bugcrowd</span>
+      <span class="skill-tag" style="border-color:rgba(255,43,78,.3);color:rgba(255,43,78,.7)">Intigriti</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- INCOME STREAMS -->
+<section id="income">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-cmd">cat income_streams.json</div>
+      <h2 class="section-title">INCOME STREAMS</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="terminal-box reveal">
+      <div class="terminal-header">
+        <div class="terminal-dot td-red"></div>
+        <div class="terminal-dot td-amber"></div>
+        <div class="terminal-dot td-green"></div>
+        <span class="terminal-title">income_streams.json</span>
+      </div>
+      <div class="income-table-wrap">
+        <table class="income-table">
+          <thead>
+            <tr>
+              <th>Stream</th>
+              <th>Platform</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bug Bounty</td>
+              <td class="platforms">HackerOne <span class="sep">·</span> Bugcrowd <span class="sep">·</span> Intigriti</td>
+              <td><span class="status-pill pill-active">Active</span></td>
+            </tr>
+            <tr>
+              <td>Udemy Instructor</td>
+              <td class="platforms">Python <span class="sep">·</span> Cybersecurity <span class="sep">·</span> Hacking</td>
+              <td><span class="status-pill pill-students">1L+ Students</span></td>
+            </tr>
+            <tr>
+              <td>Freelancing</td>
+              <td class="platforms">Security Audits <span class="sep">·</span> Dev Work <span class="sep">·</span> Tools</td>
+              <td><span class="status-pill pill-open">Open</span></td>
+            </tr>
+            <tr>
+              <td>Trading</td>
+              <td class="platforms">Financial Markets</td>
+              <td><span class="status-pill pill-running">Running</span></td>
+            </tr>
+            <tr>
+              <td>Open Source</td>
+              <td class="platforms">Tools &amp; Scripts</td>
+              <td><span class="status-pill pill-building">Building</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONNECT -->
+<section id="connect">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-cmd">connect --all</div>
+      <h2 class="section-title">CONNECT</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="connect-grid reveal">
+      <a class="connect-card" href="mailto:dx4iot@gmail.com">
+        <div class="cc-icon">✉</div>
+        <div class="cc-label">Gmail</div>
+      </a>
+      <a class="connect-card" href="https://www.linkedin.com/in/dx4iot/" target="_blank">
+        <div class="cc-icon" style="color:var(--cyan)">in</div>
+        <div class="cc-label">LinkedIn</div>
+      </a>
+      <a class="connect-card" href="https://instagram.com/dx4iot" target="_blank">
+        <div class="cc-icon" style="color:var(--purple)">📸</div>
+        <div class="cc-label">Instagram</div>
+      </a>
+      <a class="connect-card" href="https://twitter.com/dx4iot" target="_blank">
+        <div class="cc-icon" style="color:var(--cyan)">𝕏</div>
+        <div class="cc-label">Twitter</div>
+      </a>
+      <a class="connect-card" href="https://www.udemy.com/user/nishant-tiwari-61/" target="_blank">
+        <div class="cc-icon" style="color:var(--amber)">🎓</div>
+        <div class="cc-label">Udemy</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Nishant Tiwari</span>
+  <span>dx4iot — Security Researcher · Bug Hunter · Educator</span>
+  <span>India 🇮🇳</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
