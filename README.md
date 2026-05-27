@@ -1,7 +1,3 @@
-# dx4iot — Nishant Tiwari | Personal Portfolio
-
-A cyberpunk-themed personal portfolio for **Nishant Tiwari (dx4iot)** — Security Researcher, Bug Bounty Hunter & Educator.
-
 ## 🗂️ File Structure
 
 ```
